@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-auth.js"></script> -->
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBY_x2rUhOaHVSqTgohCOetnp0-uR_oHT4",
+            authDomain: "emaillgoinauth.firebaseapp.com",
+            projectId: "emaillgoinauth",
+            storageBucket: "emaillgoinauth.appspot.com",
+            messagingSenderId: "991522430378",
+            appId: "1:991522430378:web:4343d478f03d4358d2dfd3",
+            measurementId: "G-MS8W07K5RP"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+<script src="mapp.js"></script>
+</head>
+
+<body>
+
+    <div class="form">
+        <input type="email" name="" id="txtemail" placeholder="Email">
+        <br>
+        <input type="password" name="" id="txtpw" placeholder="Password">
+        <br>
+        <input type="button" value="Sign Up" onclick="signup()">
+    </div>
+
+
+    <div class="form">
+        <input type="email" name="" id="txtemaillgoin" placeholder="Email">
+        <br>
+        <input type="password" name="" id="txtpwlogin" placeholder="Password">
+        <br>
+        <input type="button" value="login" onclick="login()">
+    </div>
+
+
+</body>
+
+</html>

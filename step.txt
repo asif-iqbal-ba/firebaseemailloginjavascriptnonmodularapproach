@@ -1,0 +1,64 @@
+1-Add project in your firebase account
+2-create app in your project
+3-Add CDN Script to your project 
+There are 2 type of CDN Script available
+i- Moduler CDN Script
+//from version 9 firebase is used to modular approacth
+<script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBY_x2rUhOaHVSqTgohCOetnp0-uR_oHT4",
+          authDomain: "emaillgoinauth.firebaseapp.com",
+          projectId: "emaillgoinauth",
+          storageBucket: "emaillgoinauth.appspot.com",
+          messagingSenderId: "991522430378",
+          appId: "1:991522430378:web:4343d478f03d4358d2dfd3",
+          measurementId: "G-MS8W07K5RP"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+</script>
+in this approach we code all our java script in this script
+
+ii-Non modular approach
+before version 9 firebase used below type
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-auth.js"></script> -->
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBY_x2rUhOaHVSqTgohCOetnp0-uR_oHT4",
+            authDomain: "emaillgoinauth.firebaseapp.com",
+            projectId: "emaillgoinauth",
+            storageBucket: "emaillgoinauth.appspot.com",
+            messagingSenderId: "991522430378",
+            appId: "1:991522430378:web:4343d478f03d4358d2dfd3",
+            measurementId: "G-MS8W07K5RP"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    Now we can used seperate javascript to connect with code
+
+    iii-installation approach 
+    in this approach we use installation in our project
+    command is
+            open Terminal in vs code in your project and install
+                npm install firebase
+    Then 
+
+
+
